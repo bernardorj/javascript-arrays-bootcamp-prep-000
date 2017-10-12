@@ -6,8 +6,7 @@ var chocolateBars = [
 ]
 
 function addElementToBeginningOfArray(array, element){
-  var array = chocolateBars;
-  var element = 'foo'
+
 
   var newArray = [element, ...array]
 
@@ -35,7 +34,7 @@ function addElementToEndOfArray(array, element){
 function destructivelyAddElementToEndOfArray(array, element){
   var array = chocolateBars;
   var element = 'foo'
-  
+
   var newArray4 = chocolateBars.push(element)
 
   return newArray4
