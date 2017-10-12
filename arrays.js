@@ -12,9 +12,9 @@ function addElementToBeginningOfArray(array, element){
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element){
-  var newArray = array.unshift(element)
+  var array = array.unshift(element)
 
-  return newArray
+  return array
 }
 
 function addElementToEndOfArray(array, element){
@@ -24,7 +24,7 @@ function addElementToEndOfArray(array, element){
 }
 
 function destructivelyAddElementToEndOfArray(array, element){
-  var newArray = chocolateBars.push(element)
+  var array = array.push(element)
 
-  return newArray
+  return array
 }
