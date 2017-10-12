@@ -6,36 +6,25 @@ var chocolateBars = [
 ]
 
 function addElementToBeginningOfArray(array, element){
-
-
   var newArray = [element, ...array]
 
   return newArray
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element){
-  var array = chocolateBars;
-  var element = 'foo'
+  var newArray = array.unshift(element)
 
-  var newArray2 = array.unshift(element)
-
-  return newArray2
+  return newArray
 }
 
 function addElementToEndOfArray(array, element){
-  var array = chocolateBars;
-  var element = 'foo'
+  var newArray = [...array, element]
 
-  var newArray3 = [...array, element]
-
-  return newArray3
+  return newArray
 }
 
 function destructivelyAddElementToEndOfArray(array, element){
-  var array = chocolateBars;
-  var element = 'foo'
+  var newArray = chocolateBars.push(element)
 
-  var newArray4 = chocolateBars.push(element)
-
-  return newArray4
+  return newArray
 }
