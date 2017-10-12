@@ -6,13 +6,23 @@ var chocolateBars = [
 ]
 
 function addElementToBeginningOfArray(array, element){
-  var newArray = [element, ...chocolateBars]
+  var newArray = [element, ...array]
 
   return newArray
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element){
-  var newArray2 = chocolateBars.unshift(element)
+  var newArray2 = array.unshift(element)
 
-  return chocolateBars
+  return newArray2
+}
+
+function addElementToEndOfArray(array, element){
+  var newArray3 = [...array, element]
+
+  return newArray3
+}
+
+function destructivelyAddElementToEndOfArray(array, element){
+  chocolateBars.push(element)
 }
